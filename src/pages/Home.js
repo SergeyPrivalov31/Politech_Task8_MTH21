@@ -1,11 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import CarouselBox from "../components/CarouselBox";
 
-class Home extends Component {
-	render() {
-		return (
-			<CarouselBox />
-		)
-	}
+const Home = () => {
+	return (
+		<CarouselBox />
+	)
 }
 export default Home
