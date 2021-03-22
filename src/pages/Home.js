@@ -1,9 +1,13 @@
 import React from "react";
 import CarouselBox from "../components/CarouselBox";
+import Carder from "../components/Carder";
 
 const Home = () => {
 	return (
-		<CarouselBox />
+		<div>
+			<CarouselBox />
+			<Carder />
+		</div>
 	)
 }
 export default Home
