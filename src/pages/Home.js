@@ -1,12 +1,9 @@
 import React from "react";
-import CarouselBox from "../components/CarouselBox";
-import Carder from "../components/Carder";
-
+import Content from "../components/Content.js";
 const Home = () => {
 	return (
 		<div>
-			<CarouselBox />
-			<Carder />
+			<Content />
 		</div>
 	)
 }
