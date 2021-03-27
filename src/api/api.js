@@ -8,7 +8,6 @@ const instance = axios.create({
 	}
 })
 export const polytechAPI = {
-
 	getBrains(currentPage = 1, pageSize = 5) {
 		return instance.get(`brain?page=${currentPage}&count=${pageSize}`)
 			.then(response => {
@@ -16,19 +15,3 @@ export const polytechAPI = {
 			});
 	}
 }
-
-export const authAPI = {
-	me() {
-		return instance.get(`auth/me`);
-	},
-	login(email, password, rememberMe = false, captcha = null) {
-		return instance.post(`auth/login`, { email, password, rememberMe, captcha });
-	},
-	logout() {
-		return instance.delete(`auth/login`);
-	}
-}
-
-
-
-
