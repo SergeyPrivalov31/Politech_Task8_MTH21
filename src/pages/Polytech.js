@@ -1,16 +1,15 @@
 
 import React, { useState } from "react";
 import { Container, Tab, Nav, Row, Col, CardDeck, Card } from 'react-bootstrap';
-import BrainItems from "../polytechComponents/Brain/BrainItems.js";
 import Since from "../polytechComponents/Since/Since.js";
 import Digital from "../polytechComponents/digitalUniverse/Digital.js";
 import image from "../assets/scheme.png"
 import { getVertexes } from '../api/api.js';
+import BrainItems from "../polytechComponents/Brain/BrainItems";
 
 const Polytech = () => {
 
 	let [state, setState] = useState([]);
-
 
 	return (
 		<Container>

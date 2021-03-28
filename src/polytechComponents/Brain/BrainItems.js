@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col, Media, Button } from "react-bootstrap";
 
 import image from "../../assets/Group.png"
-import { getVertexes } from "../../api/api.js"
 
 const BrainItems = (props) => {
 
