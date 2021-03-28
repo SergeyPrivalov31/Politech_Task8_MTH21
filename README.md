@@ -1,4 +1,7 @@
 # Getting Started with Create React App
+This project was created for: https://travelhack.moscow/task/polytech/
+
+Back-end: https://github.com/EdgarGD/MoscowTravelHack-Polytech_Backend.git
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
