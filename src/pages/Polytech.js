@@ -38,7 +38,7 @@ const Polytech = () => {
 							</Card>
 						</CardDeck>
 
-						<Tab.Content className="mt-3">
+						<Tab.Content className="mt-3" border="info">
 							<Tab.Pane eventKey="first">
 								<BrainContainer />
 							</Tab.Pane>
@@ -83,8 +83,8 @@ const Polytech = () => {
 						</Tab.Content>
 					</Col>
 				</Row>
-			</Tab.Container>
-		</Container>
+			</Tab.Container >
+		</Container >
 	)
 }
 

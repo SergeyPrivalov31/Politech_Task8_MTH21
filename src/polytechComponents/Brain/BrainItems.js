@@ -1,5 +1,5 @@
 import { Container, Row, Col, Media, Button } from "react-bootstrap";
-
+import image from "../../assets/Group.png"
 const BrainItems = () => {
 
 	return (<div>
@@ -11,7 +11,7 @@ const BrainItems = () => {
 							width={150}
 							height={150}
 							className="mr-3"
-							src="https://www.sciencenews.org/wp-content/uploads/2020/04/040920_ls_review-brain_feat-1028x579.jpg" />
+							src={image} />
 						<Media.Body>
 							<h5>Brain</h5>
 							<Button variant="primary" >Перейти</Button>
@@ -22,7 +22,7 @@ const BrainItems = () => {
 							width={150}
 							height={150}
 							className="mr-3"
-							src="https://www.sciencenews.org/wp-content/uploads/2020/04/040920_ls_review-brain_feat-1028x579.jpg" />
+							src={image} />
 						<Media.Body>
 							<h5>Brain</h5>
 							<Button variant="primary" >Перейти</Button>
@@ -33,7 +33,7 @@ const BrainItems = () => {
 							width={150}
 							height={150}
 							className="mr-3"
-							src="https://www.sciencenews.org/wp-content/uploads/2020/04/040920_ls_review-brain_feat-1028x579.jpg" />
+							src={image} />
 						<Media.Body>
 							<h5>Brain</h5>
 							<Button variant="primary" >Перейти</Button>
@@ -44,7 +44,7 @@ const BrainItems = () => {
 							width={150}
 							height={150}
 							className="mr-3"
-							src="https://www.sciencenews.org/wp-content/uploads/2020/04/040920_ls_review-brain_feat-1028x579.jpg" />
+							src={image} />
 						<Media.Body>
 							<h5>Brain</h5>
 							<Button variant="primary" >Перейти</Button>
@@ -55,7 +55,7 @@ const BrainItems = () => {
 							width={150}
 							height={150}
 							className="mr-3"
-							src="https://www.sciencenews.org/wp-content/uploads/2020/04/040920_ls_review-brain_feat-1028x579.jpg" />
+							src={image} />
 						<Media.Body>
 							<h5>Brain</h5>
 							<Button variant="primary" >Перейти</Button>
