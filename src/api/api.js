@@ -12,3 +12,4 @@ export function getVertexes(args) {
 	if (args?.topic) {
 		params.push(`topic=${args?.topic}`)
 	}
+}
