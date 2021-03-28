@@ -15,7 +15,7 @@ class Header extends React.Component {
 	render() {
 		return (
 			<div>
-				<Navbar collapseOnSelect expand="md" bg="blue" variant="white" >
+				<Navbar collapseOnSelect expand="md" bg="blue" variant="blue" >
 					<Container>
 						<Navbar.Brand href="/">
 							<img
@@ -30,7 +30,7 @@ class Header extends React.Component {
 						<Navbar.Collapse id="responsive-navbar-nav">
 
 							<Nav className="mr-auto">
-								<Nav.Link href="/"> Направления </Nav.Link>
+								<Nav.Link href="/"> Вы на верном пути </Nav.Link>
 							</Nav>
 
 						</Navbar.Collapse>

@@ -29,7 +29,6 @@ const Polytech = () => {
 					<Col sm={9}>
 						<Tab.Content className="mt-3">
 
-
 							<Tab.Pane eventKey="first">
 								<BrainContainer />
 							</Tab.Pane>
@@ -78,4 +77,5 @@ const Polytech = () => {
 		</Container>
 	)
 }
+
 export default Polytech;

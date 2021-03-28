@@ -1,6 +1,7 @@
-import { Container, Row, Col, Media, ListGroup, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Media, Button } from "react-bootstrap";
 
-const BrainItems = (props) => {
+const BrainItems = () => {
+
 	return (<div>
 		<Container>
 			<Row>
@@ -12,9 +13,52 @@ const BrainItems = (props) => {
 							className="mr-3"
 							src="https://www.sciencenews.org/wp-content/uploads/2020/04/040920_ls_review-brain_feat-1028x579.jpg" />
 						<Media.Body>
-							<h5>{props.title}</h5>
-							<p>{props.text}</p>
-							<Button variant="primary">Перейти</Button>
+							<h5>Brain</h5>
+							<Button variant="primary" >Перейти</Button>
+						</Media.Body>
+					</Media>
+					<Media className="m-3">
+						<img
+							width={150}
+							height={150}
+							className="mr-3"
+							src="https://www.sciencenews.org/wp-content/uploads/2020/04/040920_ls_review-brain_feat-1028x579.jpg" />
+						<Media.Body>
+							<h5>Brain</h5>
+							<Button variant="primary" >Перейти</Button>
+						</Media.Body>
+					</Media>
+					<Media className="m-3">
+						<img
+							width={150}
+							height={150}
+							className="mr-3"
+							src="https://www.sciencenews.org/wp-content/uploads/2020/04/040920_ls_review-brain_feat-1028x579.jpg" />
+						<Media.Body>
+							<h5>Brain</h5>
+							<Button variant="primary" >Перейти</Button>
+						</Media.Body>
+					</Media>
+					<Media className="m-3">
+						<img
+							width={150}
+							height={150}
+							className="mr-3"
+							src="https://www.sciencenews.org/wp-content/uploads/2020/04/040920_ls_review-brain_feat-1028x579.jpg" />
+						<Media.Body>
+							<h5>Brain</h5>
+							<Button variant="primary" >Перейти</Button>
+						</Media.Body>
+					</Media>
+					<Media className="m-3">
+						<img
+							width={150}
+							height={150}
+							className="mr-3"
+							src="https://www.sciencenews.org/wp-content/uploads/2020/04/040920_ls_review-brain_feat-1028x579.jpg" />
+						<Media.Body>
+							<h5>Brain</h5>
+							<Button variant="primary" >Перейти</Button>
 						</Media.Body>
 					</Media>
 				</Col>
