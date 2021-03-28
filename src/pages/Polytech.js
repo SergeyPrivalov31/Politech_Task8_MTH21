@@ -1,9 +1,10 @@
 
 import React from "react";
-import { Container, Tab, Nav, Row, Col } from 'react-bootstrap';
+import { Container, Tab, Nav, Row, Col, CardDeck, Card } from 'react-bootstrap';
 import BrainContainer from "../polytechComponents/Brain/BrainContainer.js";
 import Since from "../polytechComponents/Since/Since.js";
 import Digital from "../polytechComponents/digitalUniverse/Digital.js";
+import image from "../assets/scheme.png"
 
 const Polytech = () => {
 	return (
@@ -27,8 +28,17 @@ const Polytech = () => {
 						</Nav>
 					</Col>
 					<Col sm={9}>
-						<Tab.Content className="mt-3">
 
+						<CardDeck className="m-4">
+							<Card border="info">
+								<Card.Img
+									variant=""
+									src={image}
+								/>
+							</Card>
+						</CardDeck>
+
+						<Tab.Content className="mt-3">
 							<Tab.Pane eventKey="first">
 								<BrainContainer />
 							</Tab.Pane>
