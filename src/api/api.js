@@ -15,3 +15,19 @@ export const polytechAPI = {
 			});
 	}
 }
+
+export function getVertexes({color, topic}) {
+
+	let url = "https://faraday-lab.online/api/get?"
+	let params = []
+
+	if (color) {
+		params.push(`color=${color}`)
+	}
+
+	if (topic) {
+		params.push(`topic=${topic}`)
+	}
+
+	return axios.get(url + params.join('&'))
+}

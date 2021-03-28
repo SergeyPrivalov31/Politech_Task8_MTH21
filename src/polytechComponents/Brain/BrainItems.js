@@ -1,4 +1,5 @@
 import { Container, Row, Col, Media, Button } from "react-bootstrap";
+import {getVertexes} from "../../api/api";
 
 const BrainItems = () => {
 
@@ -14,7 +15,10 @@ const BrainItems = () => {
 							src="https://www.sciencenews.org/wp-content/uploads/2020/04/040920_ls_review-brain_feat-1028x579.jpg" />
 						<Media.Body>
 							<h5>Brain</h5>
-							<Button variant="primary" >Перейти</Button>
+							<Button variant="primary" onClick={async () => {
+								const result = await getVertexes()
+								console.log(result);
+							}}>Перейти</Button>
 						</Media.Body>
 					</Media>
 					<Media className="m-3">
