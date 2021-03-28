@@ -5,7 +5,6 @@ import BrainContainer from "../polytechComponents/Brain/BrainContainer.js";
 import Since from "../polytechComponents/Since/Since.js";
 import Digital from "../polytechComponents/digitalUniverse/Digital.js";
 
-
 const Polytech = () => {
 	return (
 		<Container>
@@ -42,7 +41,6 @@ const Polytech = () => {
 							<Tab.Pane eventKey="third">
 								<Digital />
 							</Tab.Pane>
-
 
 
 							<Tab.Pane eventKey="fourth">

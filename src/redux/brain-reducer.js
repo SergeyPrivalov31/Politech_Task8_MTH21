@@ -18,14 +18,14 @@ const brainReducer = (state = initialState, action) => {
 			return state;
 	}
 }
-export const setBrains = (brains) => ({ type: SET_BRAINS, brains })
+export const setBrains = (items) => ({ type: SET_BRAINS, items })
 
 export const requestBrains = (page, pageSize) => {// это thunkCreator
 	return async (dispatch) => {
 
 		let data = await polytechAPI.getBrains(page, pageSize);
 
-		dispatch(setBrains(data.items));
+		dispatch(brainReducer(data.items));
 
 	}
 }

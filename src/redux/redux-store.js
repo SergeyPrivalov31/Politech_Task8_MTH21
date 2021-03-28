@@ -4,7 +4,7 @@ import brainReducer from ".\brain-reducer.js";
 
 let reducers = combineReducers({
 	brainPage: brainReducer,
-	app: appReducer
+	//Собираем все редьюсеры и комбинируем в один
 })
 
 const store = createStore(reducers(applyMiddleware(thunkMiddleware)));

@@ -2,7 +2,7 @@ import axios from "axios";
 
 const instance = axios.create({
 	withCredentials: true,
-	baseURL: `https://`,
+	baseURL: `https://virtserver.swaggerhub.com/MTHPolytech/MTH/1.0.0`,
 	headers: {
 		"API-KEY": "4c7e10ff-30a6-4821-8cb9-3d1a029315d3"
 	}
