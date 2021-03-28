@@ -1,12 +1,17 @@
 
-import React from "react";
+import React, { useState } from "react";
 import { Container, Tab, Nav, Row, Col, CardDeck, Card } from 'react-bootstrap';
-import BrainContainer from "../polytechComponents/Brain/BrainContainer.js";
+import BrainItems from "../polytechComponents/Brain/BrainItems.js";
 import Since from "../polytechComponents/Since/Since.js";
 import Digital from "../polytechComponents/digitalUniverse/Digital.js";
 import image from "../assets/scheme.png"
+import { getVertexes } from '../api/api.js';
 
 const Polytech = () => {
+
+	let [state, setState] = useState([]);
+
+
 	return (
 		<Container>
 			<Tab.Container>
@@ -14,7 +19,10 @@ const Polytech = () => {
 					<Col sm={3}>
 						<Nav variant="pills" className="flex-column mt-2">
 							<Nav.Item>
-								<Nav.Link eventKey="first">Мозг</Nav.Link>
+								<Nav.Link eventKey="first" onClick={async () => {
+									const result = await getVertexes({ topic: "dvizhenie" });
+									setState(result.data);
+								}}>Мозг</Nav.Link>
 								<Nav.Link eventKey="second">Наука</Nav.Link>
 								<Nav.Link eventKey="third">Цыфровая вселенная</Nav.Link>
 								<Nav.Link eventKey="fourth">Энергия</Nav.Link>
@@ -40,7 +48,7 @@ const Polytech = () => {
 
 						<Tab.Content className="mt-3" border="info">
 							<Tab.Pane eventKey="first">
-								<BrainContainer />
+								<BrainItems items={state} />
 							</Tab.Pane>
 
 							<Tab.Pane eventKey="second">
