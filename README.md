@@ -1,3 +1,7 @@
+#Project of Moscow Travel Hack 2021 Hackaton
+
+
+
 # Getting Started with Create React App
 This project was created for: https://travelhack.moscow/task/polytech/
 
